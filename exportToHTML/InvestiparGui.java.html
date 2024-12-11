@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>InvestiparGui.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #2aacb8;}
+.s5 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+InvestiparGui.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.*;</span>
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">awt</span><span class="s2">.*;</span>
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">awt</span><span class="s2">.</span><span class="s1">event</span><span class="s2">.</span><span class="s1">ActionEvent</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">awt</span><span class="s2">.</span><span class="s1">event</span><span class="s2">.</span><span class="s1">ActionListener</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">InvestiparGui </span><span class="s2">{</span>
+    <span class="s0">private </span><span class="s1">JTextField txtBitcoins</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JTextField txtUnicoins</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JTextField txtEthereum</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton RealizarCotacaoBtn</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton LimparBtn</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JTextField txtMyBit</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JTextField txtMyUni</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JTextField txtMyEthe</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JTextField txtResultado</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JPanel PainelPrincipal</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JLabel InvestiparLabel</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JLabel BitcoinsLabel</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JLabel UnicoinsLabel</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JLabel EthereumLabel</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JLabel ValorBitLabel</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JLabel ValorUniLabel</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JLabel ValorEtheLabel</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JLabel MyBitLabel</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JLabel MyUniLabel</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JLabel MyEtheLabel</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JLabel ResultadoLabel</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JTextField txtBitCoin</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JTextField txtUniCoins</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JTextField txtValorEhetereum</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">String bitcoin </span><span class="s2">= </span><span class="s3">&quot;&quot;</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">String texto </span><span class="s2">= </span><span class="s3">&quot;&quot;</span><span class="s2">;</span>
+
+
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+        <span class="s1">JFrame frame </span><span class="s2">= (</span><span class="s0">new </span><span class="s1">JFrame</span><span class="s2">(</span><span class="s3">&quot;InvestiPar&quot;</span><span class="s2">));</span>
+        <span class="s1">frame</span><span class="s2">.</span><span class="s1">setSize</span><span class="s2">(</span><span class="s4">800</span><span class="s2">, </span><span class="s4">600</span><span class="s2">);</span>
+        <span class="s1">frame</span><span class="s2">.</span><span class="s1">setDefaultCloseOperation</span><span class="s2">(</span><span class="s1">JFrame</span><span class="s2">.</span><span class="s1">EXIT_ON_CLOSE</span><span class="s2">);</span>
+        <span class="s1">frame</span><span class="s2">.</span><span class="s1">setContentPane</span><span class="s2">(</span><span class="s0">new </span><span class="s1">InvestiparGui</span><span class="s2">().</span><span class="s1">PainelPrincipal</span><span class="s2">);</span>
+        <span class="s1">frame</span><span class="s2">.</span><span class="s1">setVisible</span><span class="s2">(</span><span class="s0">true</span><span class="s2">);</span>
+    <span class="s2">}</span>
+
+
+    <span class="s0">public </span><span class="s1">InvestiparGui</span><span class="s2">() {</span>
+
+
+        <span class="s1">JButton</span><span class="s2">[] </span><span class="s1">lista de botoes </span><span class="s2">= {</span><span class="s1">LimparBtn</span><span class="s2">, </span><span class="s1">RealizarCotacaoBtn</span><span class="s2">}</span>
+        <span class="s1">PainelPrincipal</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">LimparBtn</span><span class="s2">);</span>
+        <span class="s1">PainelPrincipal</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">RealizarCotacaoBtn</span><span class="s2">);</span>
+
+        <span class="s1">RealizarCotacaoBtn</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s0">if</span><span class="s2">(</span><span class="s1">botoes </span><span class="s2">)</span>
+
+                    <span class="s5">//eu desisto professor me perdoa eu não sei como fazer esta lógica de o usuario colocar algo e funcionar de forma coerente me perdoa :'( me ajuda pfv.</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="InvestiparGui">
+  <grid id="27dc6" binding="PainelPrincipal" layout-manager="GridLayoutManager" row-count="10" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-7077115"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="7851a" class="javax.swing.JLabel" binding="InvestiparLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <foreground color="-394241"/>
+          <text value="INVESTIPAR"/>
+        </properties>
+      </component>
+      <component id="50c4d" class="javax.swing.JLabel" binding="BitcoinsLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-394241"/>
+          <text value="Bitcoins"/>
+        </properties>
+      </component>
+      <component id="ebadc" class="javax.swing.JLabel" binding="UnicoinsLabel">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-394241"/>
+          <text value="Unicoins"/>
+        </properties>
+      </component>
+      <component id="e996" class="javax.swing.JLabel" binding="EthereumLabel">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-394241"/>
+          <text value="Ethereum"/>
+        </properties>
+      </component>
+      <component id="179e2" class="javax.swing.JTextField" binding="txtBitcoins">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-394241"/>
+        </properties>
+      </component>
+      <component id="c4dc8" class="javax.swing.JTextField" binding="txtUnicoins">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-394241"/>
+        </properties>
+      </component>
+      <component id="b5313" class="javax.swing.JTextField" binding="txtEthereum">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-394241"/>
+        </properties>
+      </component>
+      <component id="3d16a" class="javax.swing.JLabel" binding="ValorBitLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-394241"/>
+          <text value="Valor do Bitcoins"/>
+        </properties>
+      </component>
+      <component id="982c2" class="javax.swing.JLabel" binding="ValorUniLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-394241"/>
+          <text value="Valor do Unicoins"/>
+        </properties>
+      </component>
+      <component id="31d7e" class="javax.swing.JLabel" binding="ValorEtheLabel">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-394241"/>
+          <text value="Valor do Ethereum"/>
+        </properties>
+      </component>
+      <component id="67f54" class="javax.swing.JButton" binding="RealizarCotacaoBtn">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-15880440"/>
+          <foreground color="-394241"/>
+          <text value="Realizar Cotação"/>
+        </properties>
+      </component>
+      <component id="20bc7" class="javax.swing.JButton" binding="LimparBtn">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <foreground color="-394241"/>
+          <text value="Limpar"/>
+        </properties>
+      </component>
+      <component id="b11aa" class="javax.swing.JLabel" binding="MyBitLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-394241"/>
+          <text value="My Bitcoins"/>
+        </properties>
+      </component>
+      <component id="1155d" class="javax.swing.JLabel" binding="MyUniLabel">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-394241"/>
+          <text value="My Unicoins"/>
+        </properties>
+      </component>
+      <component id="7baf8" class="javax.swing.JLabel" binding="MyEtheLabel">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-394241"/>
+          <text value="My Ethereum"/>
+        </properties>
+      </component>
+      <component id="99bb2" class="javax.swing.JTextField" binding="txtMyBit">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-394241"/>
+        </properties>
+      </component>
+      <component id="578a3" class="javax.swing.JTextField" binding="txtMyUni">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-394241"/>
+        </properties>
+      </component>
+      <component id="c1c2a" class="javax.swing.JTextField" binding="txtMyEthe">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-394241"/>
+        </properties>
+      </component>
+      <component id="ea599" class="javax.swing.JLabel" binding="ResultadoLabel">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-394241"/>
+          <text value="Resultado"/>
+        </properties>
+      </component>
+      <component id="a521a" class="javax.swing.JTextField" binding="txtResultado">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-394241"/>
+        </properties>
+      </component>
+      <component id="fffe7" class="javax.swing.JTextField" binding="txtBitCoin">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-394241"/>
+        </properties>
+      </component>
+      <component id="8758" class="javax.swing.JTextField" binding="txtUniCoins">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-394241"/>
+        </properties>
+      </component>
+      <component id="4e4a3" class="javax.swing.JTextField" binding="txtValorEhetereum">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-394241"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
